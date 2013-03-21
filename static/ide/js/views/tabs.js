@@ -7,7 +7,7 @@
 
 var views = views || {};
 
-views.tabs = new jaspi.View({
+views.tabs = new jaspi.views.View({
     
     init: function () {
         var self = this;

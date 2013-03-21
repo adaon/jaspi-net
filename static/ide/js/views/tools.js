@@ -1,6 +1,6 @@
 var views = views || {};
 
-views.tools = new jaspi.View({
+views.tools = new jaspi.views.View({
     
     tools: {},
     toolBlock: null,

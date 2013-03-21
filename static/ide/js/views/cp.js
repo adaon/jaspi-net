@@ -8,7 +8,7 @@
 
 var views = views || {};
 
-views.cp = new jaspi.View({
+views.cp = new jaspi.views.View({
     
     tools: {},
     hiddenTools: [],
