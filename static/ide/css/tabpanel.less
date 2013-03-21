@@ -1,0 +1,56 @@
+.noSelection () {
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.tabPanelBlock {
+    height: 30px;
+    background-image: url(/ide/images/tabpanelback.png);
+    
+    .tabBlock {
+        height: 23px;
+        margin-top:2px;
+        width: 150px;
+        padding: 5px 10px 0px 10px;
+        float: left;
+        background-color: #4b4b4b;
+        margin-right:1px;
+        overflow: visible;
+        cursor: default;
+        .noSelection;
+        
+        .tabTitle {
+            color: #c0c0c0;
+            padding-right: 5px;
+        }
+        .tabApp {
+            color: #8c8c8c;
+        }
+        img {
+            opacity: 0.5;
+            margin-top: 4px;
+            float: right;
+        }
+        img:hover {
+            opacity: 1;
+        }
+    }
+    .tabBlock:hover {
+        background-color: #5b5b5b;
+    }
+    .tabBlock.selected {
+        background-color: #ececec;
+        margin-top: 0px;
+        height:24px;
+        padding-top: 6px;
+        .tabTitle {
+            color: #3a3a3a;
+        }
+        .tabApp {
+            color: #717171;
+        }
+    }
+}

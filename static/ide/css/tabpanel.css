@@ -1,0 +1,7 @@
+.tabPanelBlock{height:30px;background-image:url(/ide/images/tabpanelback.png);}.tabPanelBlock .tabBlock{height:23px;margin-top:2px;width:150px;padding:5px 10px 0px 10px;float:left;background-color:#4b4b4b;margin-right:1px;overflow:visible;cursor:default;-moz-user-select:-moz-none;-o-user-select:none;-khtml-user-select:none;-webkit-user-select:none;user-select:none;}.tabPanelBlock .tabBlock .tabTitle{color:#c0c0c0;padding-right:5px;}
+.tabPanelBlock .tabBlock .tabApp{color:#8c8c8c;}
+.tabPanelBlock .tabBlock img{opacity:0.5;margin-top:4px;float:right;}
+.tabPanelBlock .tabBlock img:hover{opacity:1;}
+.tabPanelBlock .tabBlock:hover{background-color:#5b5b5b;}
+.tabPanelBlock .tabBlock.selected{background-color:#ececec;margin-top:0px;height:24px;padding-top:6px;}.tabPanelBlock .tabBlock.selected .tabTitle{color:#3a3a3a;}
+.tabPanelBlock .tabBlock.selected .tabApp{color:#717171;}

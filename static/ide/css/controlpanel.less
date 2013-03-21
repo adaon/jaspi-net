@@ -1,0 +1,128 @@
+@accentColor: #00b7ff;
+
+.controlbutton () {
+    height: 24px;
+    padding-top: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.hover () {
+    background-image: url(/ide/images/controlpanel/hover.png);
+}
+
+.active () {
+    position: relative;
+    top: 1px;
+}
+
+.noSelection () {
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.boxShadow (@x: 0px, @y: 0px, @blur: 3px, @opacity: 0.5) {
+    -moz-box-shadow: @x @y @blur rgba(0,0,0,@opacity);
+    -webkit-box-shadow: @x @y @blur rgba(0,0,0,@opacity);
+    box-shadow: @x @y @blur rgba(0,0,0,@opacity);
+}
+
+.controlPanelBlock {
+    height: 30px;
+    background-image: url(/ide/images/controlpanel/back.png);
+    color: #c0c0c0;
+    cursor: default;
+    .noSelection;
+    
+    .projectToolsButton {
+        float: left;
+        .controlbutton;
+    }
+    .projectToolsButton:hover {
+        .hover;
+    }
+    .projectToolsButton:active {
+        .active;
+    }
+    .projectToolsButton.selected {
+        background-image: none;
+        background-color: @accentColor;
+    }
+    
+    .currentAppButton {
+        float: left;
+        .controlbutton;
+        img {
+            position: relative;
+            bottom: 2px;
+        }
+    }
+    .currentAppButton:hover {
+        .hover;
+    }
+    .currentAppButton:active {
+        .active;
+    }
+    .currentAppButton.selected {
+        background-image: none;
+        background-color: @accentColor;
+        color: #ffffff;
+    }
+    
+    .toolsPanel {
+        float: right;
+        .toolButton {
+            float: right;
+            .controlbutton;
+        }
+        .toolButton:hover {
+            .hover;
+        }
+        .toolButton:active {
+            .active;
+        }
+    }
+    
+    .allToolsButton {
+        float: right;
+        .controlbutton;
+        display: none;
+    }
+    .allToolsButton:hover {
+        .hover;
+    }
+    .allToolsButton:active {
+        .active;
+    }
+    .allToolsButton.selected {
+        background-image: none;
+        background-color: @accentColor;
+    }
+}
+
+.controlListBlock {
+    position:absolute;
+    background-color: @accentColor;
+    color: #ffffff;
+    padding: 3px;
+    cursor: default;
+    min-width: 100px;
+    
+    .noSelection;
+    
+    .boxShadow(0px, 1px, 1px, 0.2);
+    
+    .controlListItemBlock {
+        padding:2px 5px 3px 5px;
+    }
+    .controlListItemBlock:hover {
+        background-color: #ffffff;
+        color: @accentColor;
+    }
+    .controlListItemBlock:active {
+        .active;
+    }
+}

@@ -1,0 +1,18 @@
+.controlPanelBlock{height:30px;background-image:url(/ide/images/controlpanel/back.png);color:#c0c0c0;cursor:default;-moz-user-select:-moz-none;-o-user-select:none;-khtml-user-select:none;-webkit-user-select:none;user-select:none;}.controlPanelBlock .projectToolsButton{float:left;height:24px;padding-top:6px;padding-left:6px;padding-right:6px;}
+.controlPanelBlock .projectToolsButton:hover{background-image:url(/ide/images/controlpanel/hover.png);}
+.controlPanelBlock .projectToolsButton:active{position:relative;top:1px;}
+.controlPanelBlock .projectToolsButton.selected{background-image:none;background-color:#00b7ff;}
+.controlPanelBlock .currentAppButton{float:left;height:24px;padding-top:6px;padding-left:6px;padding-right:6px;}.controlPanelBlock .currentAppButton img{position:relative;bottom:2px;}
+.controlPanelBlock .currentAppButton:hover{background-image:url(/ide/images/controlpanel/hover.png);}
+.controlPanelBlock .currentAppButton:active{position:relative;top:1px;}
+.controlPanelBlock .currentAppButton.selected{background-image:none;background-color:#00b7ff;color:#ffffff;}
+.controlPanelBlock .toolsPanel{float:right;}.controlPanelBlock .toolsPanel .toolButton{float:right;height:24px;padding-top:6px;padding-left:6px;padding-right:6px;}
+.controlPanelBlock .toolsPanel .toolButton:hover{background-image:url(/ide/images/controlpanel/hover.png);}
+.controlPanelBlock .toolsPanel .toolButton:active{position:relative;top:1px;}
+.controlPanelBlock .allToolsButton{float:right;height:24px;padding-top:6px;padding-left:6px;padding-right:6px;display:none;}
+.controlPanelBlock .allToolsButton:hover{background-image:url(/ide/images/controlpanel/hover.png);}
+.controlPanelBlock .allToolsButton:active{position:relative;top:1px;}
+.controlPanelBlock .allToolsButton.selected{background-image:none;background-color:#00b7ff;}
+.controlListBlock{position:absolute;background-color:#00b7ff;color:#ffffff;padding:3px;cursor:default;min-width:100px;-moz-user-select:-moz-none;-o-user-select:none;-khtml-user-select:none;-webkit-user-select:none;user-select:none;-moz-box-shadow:0px 1px 1px rgba(0, 0, 0, 0.2);-webkit-box-shadow:0px 1px 1px rgba(0, 0, 0, 0.2);box-shadow:0px 1px 1px rgba(0, 0, 0, 0.2);}.controlListBlock .controlListItemBlock{padding:2px 5px 3px 5px;}
+.controlListBlock .controlListItemBlock:hover{background-color:#ffffff;color:#00b7ff;}
+.controlListBlock .controlListItemBlock:active{position:relative;top:1px;}
