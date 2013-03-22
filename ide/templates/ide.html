@@ -1,0 +1,69 @@
+<head>
+    <title>Jaspi IDE</title>
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" type="text/css"
+        href="/ide/css/main.css">
+    <link rel="stylesheet" type="text/css"
+        href="/ide/css/controlpanel.css">
+    <link rel="stylesheet" type="text/css"
+        href="/ide/css/tabpanel.css">
+    <link rel="stylesheet" type="text/css"
+        href="/ide/css/tool.css">
+    
+    <script src="/jaspi/js/jaspi.js"></script>
+    
+    <script type="text/x-template" id="toolButtonTemplate">
+        <div class="toolButton visible" data-name="{{name}}">{{title}}</div>
+    </script>
+    
+    <script type="text/x-template" id="controlListTemplate">
+        <div class="controlListBlock">
+            {{#each list}}
+            <div class="controlListItemBlock" data-name="{{this.name}}">
+                {{this.title}}
+            </div>
+            {{/each}}
+        </div>
+    </script>
+    
+    <script type="text/x-template" id="tabTemplate">
+        <div class="tabBlock" data-name="{{tab.name}}">
+            <span class="tabTitle">{{tab.title}}</span>
+            <span class="tabApp">{{tab.app}}</span>
+            <img src="/ide/images/close2.png">
+        </div>
+    </script>
+    
+</head>
+<body>
+    
+    <div class="controlPanelBlock">
+        
+        <div class="projectToolsButton">
+            <img src="/ide/images/projecttools.png" alt="Project Tools">
+        </div>
+        
+        <div class="currentAppButton">
+            <span></span>
+            <img src="/ide/images/expand.png" alt="Choose Application">
+        </div>
+        
+        <div class="allToolsButton">
+            <img src="/ide/images/expand.png" alt="All Tools">
+        </div>
+        
+        <div class="toolsPanel">
+        </div>
+    </div>
+    
+    <div class="tabPanelBlock">
+    </div>
+    
+    <div class="toolBlock"></div>
+    
+    <script src="/ide/js/views/cp.js"></script>
+    <script src="/ide/js/views/tabs.js"></script>
+    <script src="/ide/js/views/tools.js"></script>
+    <script src="/ide/js/main.js"></script>
+</body>
